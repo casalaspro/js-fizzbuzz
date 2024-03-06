@@ -1,4 +1,4 @@
-/*
+
 
 *{
   margin: 0;
@@ -6,4 +6,17 @@
   box-sizing: border-box;
 } 
 
-*/
+li, ul, menu{
+  list-style: none;
+}
+
+
+
+body{
+  background-color: #093B4C;
+  padding: 40px 80px;
+}
+
+.flex{
+  display: flex;
+}
