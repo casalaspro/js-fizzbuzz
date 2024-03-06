@@ -21,8 +21,8 @@ Buon lavoro e buon divertimento! :faccia_leggermente_sorridente:
 // Creare un ciclio che vada da 1 a 101
 //  - condizione di esistenza i < 101
 //    - if i % 3 === 0 && i % 5 !==0 stampa Fizz anzichè i
-//    - if i % 5 === 0 && if i % 3 !==0 stampa Buzz anzichè i
-//    - if if i % 3 === 0 && i % 5 === 0 stampa FizzBuzz anzichè i
+//    - if i % 5 === 0 && i % 3 !==0 stampa Buzz anzichè i
+//    - if i % 3 === 0 && i % 5 === 0 stampa FizzBuzz anzichè i
 //    - per tutti gli altri casi stampa il numero raggiunto dal contatore
 
 // proviamo che il file sia collegato adeguatamente
@@ -30,5 +30,15 @@ console.log("Avvio programma.");
 
 // ciclo for
 for(let i = 1 ; i < 101 ; i++){
-  
+  // test
+  // console.log(i);
+  if(i % 3 === 0 && i % 5 !==0){
+    console.log("Fizz");
+  }else if(i % 5 === 0 && i % 3 !==0){
+    console.log("Buzz");
+  }else if(i % 3 === 0 && i % 5 === 0){
+    console.log("FizzBuzz");
+  }else{
+    console.log(i);
+  }
 }
