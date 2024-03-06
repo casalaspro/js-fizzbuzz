@@ -42,3 +42,13 @@ for(let i = 1 ; i < 101 ; i++){
     console.log(i);
   }
 }
+
+// testare un append() all'interno del ciclo
+//  - creare variabile del container del DOM
+//  - creare elemento con document.createElement('div');
+//  - creare il contenuto testuale con document.createTextNode("BuzzFizz");
+//  - fare elemento.appendChild(contenuto);
+//  - aggiungere elemento al container insertBefore()
+//   - creare elemento padre
+//   - creare elemento figlio
+//   - usare elementoPadre.insertBefore(elementoNuovo, elementoFiglio);
