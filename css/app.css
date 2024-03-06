@@ -13,10 +13,35 @@ li, ul, menu{
 
 
 body{
-  background-color: #093B4C;
   padding: 40px 80px;
 }
 
 .flex{
   display: flex;
+  flex-wrap: wrap;
+}
+
+li{
+  width: calc(100% / 7);
+  /* border: 1px solid white; */
+  aspect-ratio: 1/1;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 10px;
+}
+
+li > span{
+  /* border: 1px solid white; */
+  width: 100%;
+  height: 100%;
+}
+
+.light-blue{
+  background-color: #1288B2;
+}
+
+.dark-blue{
+  background-color: #093B4C;
 }
