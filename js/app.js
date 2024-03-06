@@ -45,9 +45,30 @@ for(let i = 1 ; i < 101 ; i++){
 
 // testare un append() all'interno del ciclo
 //  - creare variabile del container del DOM
-//  - creare elemento con document.createElement('div');
+//  - creare elemento con document.createElement('li');
+let newLiElement = document.createElement('li');
 //  - creare il contenuto testuale con document.createTextNode("BuzzFizz");
-//  - fare elemento.appendChild(contenuto);
+let newdivElement = document.createElement('div');
+let newPelement = document.createElement('p');
+
+// creo il testo
+let new_p_text = document.createTextNode("FizzBuzz");
+
+// aggiungo il testo allo div
+newPelement.append(new_p_text);
+// aggiungo classe light-blue al div
+newdivElement.classList.add("light-blue")
+// aggiungo il p al div
+newdivElement.append(newPelement);
+// aggiungo lo div al li
+newLiElement.append(newdivElement);
+//  intercettare genitore
+let parentElement = document.querySelector(".container");
+// unisco gli elementi
+parentElement.appendChild(newLiElement);
+
+console.dir(newLiElement);
+console.dir()
 //  - aggiungere elemento al container insertBefore()
 //   - creare elemento padre
 //   - creare elemento figlio
